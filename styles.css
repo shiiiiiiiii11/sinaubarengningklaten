@@ -998,6 +998,13 @@ ul {
   margin-bottom: 2.5rem;
 }
 
+.kontak-cta-buttons .btn {
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
+}
+
 .kontak-details {
   display: flex;
   flex-direction: column;
@@ -1315,6 +1322,21 @@ ul {
     height: 52px;
     font-size: 1.75rem;
   }
+
+  .kontak-wrapper {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.25rem;
+    gap: 2rem;
+  }
+
+  .kontak-info-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .kontak-cta-buttons .btn-lg {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1345,7 +1367,50 @@ ul {
   }
 
   .kontak-wrapper {
-    padding: 1.5rem;
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .kontak-info-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .kontak-info-header h2 {
+    font-size: 1.35rem;
+  }
+
+  .kontak-info-header .section-description {
+    font-size: 0.95rem;
+  }
+
+  .kontak-cta-buttons {
+    gap: 0.875rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .kontak-cta-buttons .btn-lg {
+    padding: 0.8rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: var(--radius-md);
+  }
+
+  .kontak-cta-buttons .btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .kontak-details {
+    padding-top: 1.5rem;
+  }
+
+  .kontak-detail-item {
+    font-size: 0.875rem;
+  }
+
+  .map-container {
+    height: 250px;
+    min-height: 250px;
   }
 
   .footer-grid {
